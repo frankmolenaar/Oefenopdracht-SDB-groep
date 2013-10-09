@@ -58,7 +58,19 @@
 				scheduler.attachEvent("onEventSave", function(id, data){
 					$.ajax({
 						dataType: "json",
-						url: "edit_event.php",
+						url: "edit_event.php", //////// HIER MOET EEN C# script komen/////// FIXME
+						data: {id:id, data:data},
+						success: function(data, status, xhr){
+							console.log(data);
+						}
+					});
+					return true;
+				});
+				// Example extra event 2
+				scheduler.attachEvent("onEventDelete", function(id, data){
+					$.ajax({
+						dataType: "json",
+						url: "delete_event.php", //////// HIER MOET EEN C# script komen/////// FIXME
 						data: {id:id, data:data},
 						success: function(data, status, xhr){
 							console.log(data);
