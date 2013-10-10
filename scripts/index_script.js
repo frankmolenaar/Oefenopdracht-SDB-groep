@@ -69,5 +69,4 @@ $(document).ready(function(){
 		return true;
 	});
 	// todo add more events: onDrag etc.
-	$('.datepicker').datepick({minDate: new Date()});
 }); // ends onready
