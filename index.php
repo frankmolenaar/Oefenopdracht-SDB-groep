@@ -7,7 +7,7 @@
 		<script src="./libs/jquery/jquery-1.9.1.js" type="text/javascript"></script>
 		<script src="./libs/scheduler/dhtmlxscheduler.js" type="text/javascript"></script>
 		<script src="./libs/scheduler/dhtmlxscheduler_multiselect.js"></script>
-		<script type="text/javascript" src="./script/script_index.js"></script>
+		<script type="text/javascript" src="./scripts/index_script.js"></script>
 	</head>
 	<body>
 		<div id="scheduler" class="dhx_cal_container">
