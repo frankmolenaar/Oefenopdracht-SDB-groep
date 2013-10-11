@@ -61,7 +61,10 @@ $(document).ready(function(){
 		console.log("event was deleted");
 		$.ajax({
 			dataType: "json",
-			url: './controllers/kalender_afspraak_delete.cs', //////// HIER MOET EEN C# script komen/////// FIXME
+			url: 'delete_event.php', // in firebug kun je de return van deze .php file vinden. Een array met stuff die gestuurd wordt.
+									 // hetzelfde als wat gebeurd met het form op index.php. Met de line hieronder geuncomment krijg ik geen 
+									 // errors maar er gebeurt ook niks nog. 
+			//url: './controllers/kalender_afspraak_delete.cs', //////// HIER MOET EEN C# script komen/////// FIXME
 			data: {id:id, data:data},
 			success: function(data, status, xhr){
 				console.log(data);
