@@ -20,6 +20,8 @@ tijd alvast wordt overgenomen.
 -De labels voor Locatie staat nu nog vast op 1 - 5, de gebruikers ook. Dit moeten aanpasbare velden zijn die zowel naar als
 vanuit de db kunnen worden geschreven/gegenereerd in de toekomst.
 
+----------
+
 DB status:
 Met de database is de huidige stand van zaken:
 Via entity lukt het om data welke géén koppelingen kennen weg te schrijven naar een database. Hierbij is het ook inmidels gelukt om meerdere type data/objecten weg te schrijven (zoals locatie en personen). Ook is het gelukt om de data zowel in de LocalDB weg te schrijven als op de SQLServer. Echter hoe via entity de data moet worden weggeschreven welke gekoppeld is (zoals afspraak welke gekoppeld is aan locatie), lukt nog niet.
